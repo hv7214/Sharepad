@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Log in</title>
+  <link rel="stylesheet" href="/css/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="login_form">
+        Log in
+      <form  action="/controllers/authenticate-controller" method="post">
+
+        <input type="text" name="username" placeholder="username"> <br>
+        <input type="password" name="password" placeholder="password"> <br>
+      <center>  <button type="submit" name="login">Log in</button> </center>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

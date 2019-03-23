@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: 'Germania One', cursive;
+  overflow: hidden;
+}
+
+textarea.pad {
+  position: absolute;
+  margin-top: 2%;
+  border-radius: 5px;
+  border: 3px groove;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  resize: none;
+  outline: none;
+  border-left: none;
+  float:left;
+}
+
+.chat {
+  width: 25%;
+  border: 3px groove;
+  margin-left: 73%;
+  margin-top: 2%;
+  height: 465px;
+}
+
+textarea.line-numbers {
+  position: relative;
+  margin-top: 2%;
+  margin-left: 4%;
+  font-size: 20px;
+  resize: none;
+  outline: none;
+  border-right: 1px solid;
+  text-align: right;
+  float: left;
+  overflow: hidden;
+}
+
+nav {
+  font-size: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 200, 0.1);
+}
+
+.container {}
+
+.editor {
+  font-size: 30px;
+}
+
+#pad {
+  background-color: rgba(249, 214, 87, 0.5);
+}
+
+.title {
+  position: relative;
+  left: 4%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+color: rgb(27, 183, 123, 0.9)
+}

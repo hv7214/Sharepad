@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Germania One', cursive;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.signup_form {
+  padding: 20px;
+  border: 3px groove;
+  width: 30%;
+  align-content: center;
+  font-size: 30px;
+  background-color: #fff;
+  margin-top: 15%;
+  margin-left: 30%;
+  outline: none;
+}
+
+input[type=text] {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+}
+
+input[type=password] {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+}
+
+input:focus {
+  border: none;
+  border-bottom: 2px solid #2ecc71
+}
+
+button {
+  margin-top: 30px;
+  width: 40%;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #2ecc71;
+  background-color: white;
+  font-size: 20px;
+  color: #2ecc71;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}

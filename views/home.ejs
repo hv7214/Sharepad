@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Share Pad</title>
+  <link rel="stylesheet" type="text/css " href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="assets/bg.jpg" alt="" width="100%" style="position: absolute;z-index:-2;left:0;top:0">
+    <nav>
+      <a href="/">Share Pad </a>
+
+      <div class="user"> <a href="/signup" id="signup"> Signup </a> </div>
+      <div class="user"> <a href="/login" id="login"> Login </a> </div>
+
+    </nav>
+    <div class="intro">
+      Share pad is here. <br>
+      Ultra fast collaborative code editing
+    </div>
+    <form>
+      <input type="text" id="pad_name" placeholder="  Name of pad">
+      <button type="button" id="btn">OPEN</button>
+    </form>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script>
+    $(document).keydown(function(event) {
+      if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
+        event.preventDefault();
+      }
+    });
+
+    $(window).bind('mousewheel DOMMouseScroll', function(event) {
+      if (event.ctrlKey == true) {
+        event.preventDefault();
+      }
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
