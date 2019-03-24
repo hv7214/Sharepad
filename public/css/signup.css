@@ -58,3 +58,12 @@ button:hover {
   background-color: #2ecc71;
   color: #fff;
 }
+
+.error {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 252, 124);
+  border: 1px solid red;
+  margin-top: 5px;
+}

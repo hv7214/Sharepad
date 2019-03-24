@@ -58,3 +58,21 @@ button:hover {
   background-color: #2ecc71;
   color: #fff;
 }
+
+.error {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 252, 124);
+  border: 1px solid red;
+  margin-top: 5px;
+}
+
+.success {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(22, 201, 28,0.5);
+  border: 1px solid green;
+  margin-top: 5px;
+}

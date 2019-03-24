@@ -12,12 +12,13 @@
 <body>
   <div class="container">
     <div class="login_form">
-        Log in
-      <form  action="/controllers/authenticate-controller" method="post">
+      Log in <br>
+      <% include ./partials/messages %>
+      <form action="/users/login" method="post">
 
-        <input type="text" name="username" placeholder="username"> <br>
-        <input type="password" name="password" placeholder="password"> <br>
-      <center>  <button type="submit" name="login">Log in</button> </center>
+        <input type="text" name="email" placeholder="email" value="<%= typeof email != 'undefined'? username : '' %>"> <br>
+        <input type="password" name="password" placeholder="password" value="<%= typeof password != 'undefined'? password : '' %>"> <br>
+        <center> <button type="submit" name="login">Log in</button> </center>
       </form>
     </div>
 

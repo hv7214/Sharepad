@@ -12,16 +12,16 @@
 <body>
   <div class="container">
     <div class="signup_form">
-        Sign up
-      <form  action="/controllers/register-controller" method="post">
-
-        <input type="text" name="username" placeholder="username"> <br>
-        <input type="text" name="email" placeholder="email"> <br>
-        <input type="password" name="password" placeholder="password"> <br>
-      <center>  <button type="submit" name="signup">Sign Up</button> </center>
+      Sign up <br>
+      <% include ./partials/messages %>
+      <form action="/users/signup" method="post">
+        <input type="text" name="username" placeholder="username" value="<%= typeof username != 'undefined'? username : '' %>"> <br>
+        <input type="text" name="email" placeholder="email" value="<%= typeof email != 'undefined'? email : '' %>"> <br>
+        <input type="password" name="password1" placeholder="password" value="<%= typeof password1 != 'undefined'? password1 : '' %>"> <br>
+        <input type="password" name="password2" placeholder="confirm password" value="<%= typeof password2 != 'undefined'? password2 : '' %>"> <br>
+        <center> <button type="submit" name="signup">Sign Up</button> </center>
       </form>
     </div>
-
   </div>
 </body>
 

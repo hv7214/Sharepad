@@ -1,0 +1,14 @@
+<br>
+<% if(typeof errors != 'undefined') { %>
+<% errors.forEach( function(error) { %>
+<div class="error">
+  <%= error.msg  %> <br>
+</div>
+<% }); %>
+<% } %>
+
+<% if(locals.success_msg) { %>
+<div class="success">
+  <%= success_msg %>
+</div>
+<% } %>
